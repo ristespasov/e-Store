@@ -87,6 +87,7 @@ nav form input:focus {
 
 @media screen and (min-width: 537px) and (max-width: 768px) {
     #detail {
+        width: 90%;
         margin-top: 50px;
     }
 
@@ -99,6 +100,7 @@ nav form input:focus {
     #detail {
         margin-top: 30px;
         padding-left: 10%;
+        width: 90%;
     }
 
     #detail h3 {

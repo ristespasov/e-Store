@@ -1,3 +1,4 @@
+// Image gallery
 openImg("blue-navy");
 
 function openImg(imgName) {
@@ -33,14 +34,17 @@ $('.red-navy').click(function () {
 // Add image border on click
 $('.color').click(function () {
     $('.color').css("border", "none");
-    // this border from other image   
     $(this).css("border", "2px solid saddlebrown");
 });
 
-// Color tooltip
+// Color description tooltip
 $(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip()
 });
+
+if ($(window).width() < 537) {
+    $('.color').removeAttr('data-toggle');
+}
 
 // Add size description when button clicked
 $('.s').click(function () {

@@ -29,11 +29,21 @@ nav form input:focus {
     box-shadow: none !important;
 }
 
+nav form button {
+    padding: 7px !important;
+}
+
 @media screen and (max-width: 991px) {
     nav {
         margin: 0px;
         padding-top: 20px;
         padding-bottom: 8px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav form input {
+        width: 70% !important;
     }
 }
 

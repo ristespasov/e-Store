@@ -22,11 +22,21 @@ nav form input:focus {
     box-shadow: none !important;
 }
 
+nav form button {
+    padding: 7px !important;
+}
+
 @media screen and (max-width: 991px) {
     nav {
         margin: 0px;
         padding-top: 20px;
         padding-bottom: 8px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav form input {
+        width: 70% !important;
     }
 }
 
@@ -44,6 +54,7 @@ nav form input:focus {
     display: inline-block;
     vertical-align: top;
     padding-left: 50px;
+    width: 49%;
 }
 
 #detail img {
@@ -71,8 +82,10 @@ nav form input:focus {
     color: gray;
 }
 
-.s, .m, .l, .xl, .xxl:focus {
-    box-shadow: none !important;
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    #size-buttons button {
+        padding: 6px 14px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -82,6 +95,10 @@ nav form input:focus {
 
     .price {
         font-size: 18px;
+    }
+
+    .btn .btn-light {
+        margin: 0px !important;
     }
 }
 
@@ -93,6 +110,10 @@ nav form input:focus {
 
     .price {
         font-size: 18px;
+    }
+    
+    #size-buttons button {
+        padding: 8px 25px;
     }
 }
 
@@ -114,10 +135,10 @@ nav form input:focus {
     .color {
         width: 40px !important;
     }
-}
 
-.btn-block:focus {
-    box-shadow: none !important;
+    #size-buttons button {
+        padding: 8px 9px;
+    }
 }
 
 /* Quantity Input */

@@ -30,7 +30,7 @@ nav form input:focus {
 }
 
 .tab-links a{
-    color: #3CB371;
+    color: green;
 }
 
 .tab-item {
@@ -110,6 +110,10 @@ nav form input:focus {
 .section-buttons button {
     text-transform: uppercase;
     margin-top: 15px;
+}
+
+.section-buttons button:focus {
+    box-shadow: none !important;
 }
 
 .hero-text {

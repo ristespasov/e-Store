@@ -1,0 +1,282 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>e-Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="shortcut icon" href="../../favicon.png">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../../index.html">e-Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Men's
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../category.html">New Arrivals</a>
+                        <a class="dropdown-item" href="#">Gift guide</a>
+                        <a class="dropdown-item" href="#">Sale</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Women's
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">New Arrivals</a>
+                        <a class="dropdown-item" href="#">Gift guide</a>
+                        <a class="dropdown-item" href="#">Sale</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Youth
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">New Arrivals</a>
+                        <a class="dropdown-item" href="#">Gift guide</a>
+                        <a class="dropdown-item" href="#">Sale</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Accessories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">New Arrivals</a>
+                        <a class="dropdown-item" href="#">Gift guide</a>
+                        <a class="dropdown-item" href="#">Sale</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- PRODUCT DETAIL -->
+    <div id="product-detail" class="container">
+        <div id="gallery">
+            <div class="row">
+                <div class="col-12">
+                    <div id="blue-navy" class="picture" style="display:none">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/1.jpg" alt="blue-navy">
+                    </div>
+                    <div id="purple-green" class="picture" style="display:none">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/2.jpg" alt="purple-green">
+                    </div>
+                    <div id="sage-wine" class="picture" style="display:none">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/3.jpg" alt="sage-wine">
+                    </div>
+                    <div id="brown-blue" class="picture" style="display:none">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/4.jpg" alt="brown-blue">
+                    </div>
+                    <div id="red-navy" class="picture" style="display:none">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/5.jpg" alt="red-navy">
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col">
+                    <a href="javascript:void(0)" class="myhover" onclick="openImg('blue-navy');">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/1.jpg" alt="blue-navy">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="javascript:void(0)" class="myhover" onclick="openImg('purple-green');">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/2.jpg" alt="purple-green">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="javascript:void(0)" class="myhover" onclick="openImg('sage-wine');">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/3.jpg" alt="sage-wine">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="javascript:void(0)" class="myhover" onclick="openImg('brown-blue');">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/4.jpg" alt="brown-blue">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="javascript:void(0)" class="myhover" onclick="openImg('red-navy');">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/5.jpg" alt="brown-blue">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="detail">
+            <div>
+                <h3>Juban check dress shirt</h3>
+                <p class="price">$85.00</p>
+            </div>
+            <hr>
+            <p><b>COLOR:</b> <span class="color-description">Blue and Navy</span></p>
+            <div>
+                <img class="color blue-navy" src="../../assets/men-procuct-images/product-1/6.jpg" alt="color"
+                    onclick="openImg('blue-navy')">
+                <img class="color purple-green" src="../../assets/men-procuct-images/product-1/7.jpg" alt="color"
+                    onclick="openImg('purple-green')">
+                <img class="color sage-wine" src="../../assets/men-procuct-images/product-1/8.jpg" alt="color"
+                    onclick="openImg('sage-wine')">
+                <img class="color brown-blue" src="../../assets/men-procuct-images/product-1/9.jpg" alt="color"
+                    onclick="openImg('brown-blue')">
+                <img class="color red-navy" src="../../assets/men-procuct-images/product-1/10.jpg" alt="color"
+                    onclick="openImg('red-navy')">
+            </div>
+            <hr>
+            <p><b>SIZE:</b> <span class="size">Medium</span></p>
+            <div>
+                <button type="button" class="s btn btn-light">S</button>
+                <button type="button" class="m btn btn-light active">M</button>
+                <button type="button" class="l btn btn-light">L</button>
+                <button type="button" class="xl btn btn-light">XL</button>
+                <button type="button" class="xxl btn btn-light">XXL</button>
+            </div>
+            <hr>
+            <p><b>QUANTITY:</b></p>
+            <div>
+                <div class="def-number-input number-input safari_only">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus"></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus"></button>
+                </div>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block">Add to Cart <i class="fa fa-shopping-cart"
+                    aria-hidden="true"></i></i></i></button>
+
+        </div>
+        <!-- Tab panes -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#product-description" role="tab"
+                    aria-controls="product-description" aria-selected="true">Description</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="details-tab" data-toggle="tab" href="#product-details" role="tab"
+                    aria-controls="product-details" aria-selected="false">Details</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="product-description" role="tabpanel"
+                aria-labelledby="description-tab">
+                <p>The Juban Check Dress Shirt was created with a variety of vibrant colors to spruce up your
+                    wardrobe. Accented with our classic, finely stitched embroidered logo on the chest and detailed
+                    laser-engraved buttons with a button down collar and two-button cuff. It is finished with a
+                    traditional cut and made with long-staple cotton twill to keep the wrinkles away. Featuring a
+                    classic grid pattern in an array of colors, this shirt is made with high-quality craftsmanship
+                    fit for any Southern gentleman.</p>
+            </div>
+            <div class="tab-pane fade" id="product-details" role="tabpanel" aria-labelledby="details-tab">
+                <p>Wrinkle-Free Treatment</p>
+                <p>100% Cotton Poplin</p>
+                <p>Button down collar</p>
+                <p>Two-button cuff</p>
+                <p>Laser engraved Southern Marsh buttons</p>
+                <p>Embroidered duck on chest</p>
+                <p>Garment washed</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-item col-sm-6 col-md-6 col-lg-3">
+                    <h3>Customer assistance</h3>
+                    <ul>
+                        <li>
+                            <a href="">My account</a>
+                        </li>
+                        <li>
+                            <a href="">Returns</a>
+                        </li>
+                        <li>
+                            <a href="">Size charts</a>
+                        </li>
+                        <li>
+                            <a href="">Shipping</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item col-sm-6 col-md-6 col-lg-3">
+                    <h3>Connect with us</h3>
+                    <ul>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">Conversations</a>
+                        </li>
+                        <li>
+                            <a href="">Brand reps</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item col-sm-6 col-md-6 col-lg-3">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li>
+                            <a href="">Man's</a>
+                        </li>
+                        <li>
+                            <a href="">Women's</a>
+                        </li>
+                        <li>
+                            <a href="">Youth</a>
+                        </li>
+                        <li>
+                            <a href="">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item col-sm-6 col-md-6 col-lg-3">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="copyrights" class="d-block">
+            <p class="text-center">&copy; Riste Spasov |
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </p>
+        </div>
+    </footer>
+
+    <script src="product.js"></script>
+
+</body>
+
+</html>

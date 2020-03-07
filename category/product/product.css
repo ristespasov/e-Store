@@ -60,6 +60,7 @@ nav form input:focus {
 /* Titles, fonts, buttons */
 #detail h3 {
     color: sienna;
+    text-transform: capitalize;
 }
 
 .price {

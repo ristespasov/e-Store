@@ -37,6 +37,11 @@ $('.color').click(function () {
     $(this).css("border", "2px solid saddlebrown");
 });
 
+// Color tooltip
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 // Add size description when button clicked
 $('.s').click(function () {
     $('.size').text('Small');

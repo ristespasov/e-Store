@@ -68,7 +68,7 @@ $('.xxl').click(function () {
 });
 
 // Button Active class
-let btns = document.getElementsByClassName("btn");
+let btns = document.getElementsByClassName("btn-size");
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
         let current = document.getElementsByClassName("active");
@@ -76,3 +76,55 @@ for (let i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+
+// Put order in Modal
+let productName = document.getElementsByClassName('title')[0].innerText;
+let productPrice = parseFloat(document.getElementById('price-value').innerText);
+
+let addToCart = document.getElementById('add');
+let list = document.getElementById('modal-info');
+
+let order = "";
+
+addToCart.addEventListener('click', () => {
+    let productColor = document.getElementsByClassName('color-description')[0].innerText;
+    let productSize = document.getElementsByClassName('size')[0].innerText;
+    let productQuantity = parseInt(document.getElementsByClassName('quantity')[0].value);
+
+    let totalPrice = (productPrice * productQuantity).toFixed(2);
+    // console.log(productName, productPrice, productColor, productSize, productQuantity, totalPrice);
+
+    order += `<div id="order-wrapper" class="row">`
+    order += `<div class="order-image d-inline-block col-xs-4 col-4">`
+    switch (productColor) {
+        case 'Blue and Navy':
+            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/1.jpg" alt="blue-navy">`
+            break;
+        case 'Purple Green and Gold':
+            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/2.jpg" alt="purple-green">`
+            break;
+        case 'Sage and Wine':
+            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/3.jpg" alt="sage-wine">`
+            break;
+        case 'Brown and Blue':
+            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/4.jpg" alt="brown-blue">`
+            break;
+        case 'Red and Navy':
+            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/5.jpg" alt="red-navy">`
+            break;
+        default:
+            break;
+    }
+    order += `</div>`
+    order += `<div class="order-details d-inline-block col-7">`
+    order += `<h5>${productName}</h5>`
+    order += `<p><b>Color:</b> ${productColor}</p>`
+    order += `<p><b>Size:</b> ${productSize}</p>`
+    order += `<p><b>Quantity:</b> ${productQuantity}</p>`
+    order += `<p><span><b>Total price:</b> $<span>${totalPrice}</p>`
+    order += `</div>`
+    order += `<span class="delete-order" onclick="this.parentElement.style.display='none'">&times;</span>`
+    order += `</div>`
+
+    list.innerHTML = order;
+});

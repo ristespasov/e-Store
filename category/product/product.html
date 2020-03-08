@@ -125,15 +125,15 @@
                 </div>
                 <div class="col">
                     <a href="javascript:void(0)" class="myhover" onclick="openImg('red-navy');">
-                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/5.jpg" alt="brown-blue">
+                        <img class="img-fluid" src="../../assets/men-procuct-images/product-1/5.jpg" alt="red-navy">
                     </a>
                 </div>
             </div>
         </div>
         <div id="detail">
             <div>
-                <h3>Juban check dress shirt</h3>
-                <p class="price">$85.00</p>
+                <h3 class="title">Juban check dress shirt</h3>
+                <p class="price">$<span id="price-value">85.00</span></p>
             </div>
             <hr>
             <p><b>COLOR:</b> <span class="color-description">Blue and Navy</span></p>
@@ -154,11 +154,11 @@
             <hr>
             <p><b>SIZE:</b> <span class="size">Medium</span></p>
             <div id="size-buttons">
-                <button type="button" class="s btn btn-light">S</button>
-                <button type="button" class="m btn btn-light active">M</button>
-                <button type="button" class="l btn btn-light">L</button>
-                <button type="button" class="xl btn btn-light">XL</button>
-                <button type="button" class="xxl btn btn-light">XXL</button>
+                <button type="button" class="s btn-size btn btn-light">S</button>
+                <button type="button" class="m btn-size btn btn-light active">M</button>
+                <button type="button" class="l btn-size btn btn-light">L</button>
+                <button type="button" class="xl btn-size btn btn-light">XL</button>
+                <button type="button" class="xxl btn-size btn btn-light">XXL</button>
             </div>
             <hr>
             <p><b>QUANTITY:</b></p>
@@ -171,7 +171,7 @@
                         class="plus"></button>
                 </div>
             </div>
-            <button type="button" class="btn btn-danger btn-lg btn-block" data-toggle="modal"
+            <button id="add" type="button" class="btn btn-danger btn-lg btn-block" data-toggle="modal"
                 data-target="#fullHeightModalRight">Add to Cart <i class="fa fa-shopping-cart"
                     aria-hidden="true"></i></button>
         </div>
@@ -208,11 +208,11 @@
         </div>
     </div>
     </div>
-    <!-- Full Height Modal Right -->
+
+    <!-- FULL HEIGHT MODAL -->
     <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
 
-        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
         <div class="modal-dialog modal-full-height modal-right" role="document">
 
 
@@ -224,7 +224,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div id="modal-info"></div>
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -233,7 +233,6 @@
             </div>
         </div>
     </div>
-    <!-- Full Height Modal Right -->
 
     <!-- FOOTER -->
     <footer>

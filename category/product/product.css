@@ -243,6 +243,76 @@ button.minus, button.plus:focus {
     padding: 15px;
 }
 
+/* Modal */
+.modal-header {
+    background-color: #3CB371;
+}
+
+#order-wrapper {
+    border-bottom: 1px solid lightgray;
+    margin: 20px 10px;
+    padding-bottom: 10px;
+}
+
+#order-wrapper h5 {
+    color: sienna;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#order-wrapper p {
+    color: gray;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+/* .order-image img{
+    width: 20% !important;
+} */
+
+.order-details {
+    padding-left: 0;
+} 
+
+.delete-order {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* .delete-order-icon i {
+    margin-left: -30px;
+}  */
+
+@media screen and (max-width: 536px) {
+    .order-image img{
+        padding: 0;
+        margin: 0;
+    }
+
+    .order-details {
+        padding: 0;
+        margin: 0;
+    } 
+
+    /* .delete-order-icon {
+        padding: 0;
+    }
+    .delete-order-icon i {
+        width: 20px;
+        font-size: 20px;
+        margin: 0px;
+    }  */
+
+    #order-wrapper h5 {
+        font-size: 10px;
+    }
+
+    #order-wrapper p {
+        font-size: 10px;
+    }
+}
+
 /* Footer */
 footer {
     height: auto;

@@ -67,7 +67,7 @@ $('.xxl').click(function () {
     $('.size').text('Double XL');
 });
 
-// Button Active class
+// Button Active class (size buttons)
 let btns = document.getElementsByClassName("btn-size");
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {

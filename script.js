@@ -98,19 +98,19 @@ addToCart.addEventListener('click', () => {
     order += `<div class="order-image d-inline-block col-xs-4 col-4">`
     switch (productColor) {
         case 'Blue and Navy':
-            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/1.jpg" alt="blue-navy">`
+            order += `<img class="img-fluid" src="assets/men-procuct-images/1.jpg" alt="blue-navy">`
             break;
         case 'Purple Green and Gold':
-            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/2.jpg" alt="purple-green">`
+            order += `<img class="img-fluid" src="assets/men-procuct-images/2.jpg" alt="purple-green">`
             break;
         case 'Sage and Wine':
-            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/3.jpg" alt="sage-wine">`
+            order += `<img class="img-fluid" src="assets/men-procuct-images/3.jpg" alt="sage-wine">`
             break;
         case 'Brown and Blue':
-            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/4.jpg" alt="brown-blue">`
+            order += `<img class="img-fluid" src="assets/men-procuct-images/4.jpg" alt="brown-blue">`
             break;
         case 'Red and Navy':
-            order += `<img class="img-fluid" src="../../assets/men-procuct-images/product-1/5.jpg" alt="red-navy">`
+            order += `<img class="img-fluid" src="assets/men-procuct-images/5.jpg" alt="red-navy">`
             break;
         default:
             break;

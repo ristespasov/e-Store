@@ -1,10 +1,6 @@
 /* Navbar */
-nav {
-    margin: -8px 0px;
-}
-
 .navbar { 
-    padding: .5rem 1rem 0rem 1rem;
+    padding: 0 16px;
 }
 
 nav li a {
@@ -27,10 +23,8 @@ nav form button {
 }
 
 @media screen and (max-width: 991px) {
-    nav {
-        margin: 0px;
-        padding-top: 20px;
-        padding-bottom: 8px !important;
+    .navbar {
+        padding: 8px;
     }
 }
 
@@ -43,18 +37,17 @@ nav form button {
 /* GALLERY */
 #product-detail {
     margin-top: 50px;
+    display: flex;
 }
 
 #gallery {
-    width: 50%;
-    display: inline-block;
+    flex-basis: 50%;
 }
 
 #detail {
-    display: inline-block;
     vertical-align: top;
     padding-left: 50px;
-    width: 49%;
+    flex-basis: 50%;
 }
 
 #detail img {
@@ -62,9 +55,9 @@ nav form button {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    #gallery {
-        width: 100%;
+@media screen and (max-width: 767px) {
+    #product-detail {
+        display: grid;
     }
 }
 
@@ -82,13 +75,13 @@ nav form button {
     color: gray;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     #size-buttons button {
         padding: 6px 14px;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     #detail h3 {
         font-size: 18px;
     }
@@ -102,7 +95,7 @@ nav form button {
     }
 }
 
-@media screen and (min-width: 537px) and (max-width: 768px) {
+@media screen and (min-width: 537px) and (max-width: 767px) {
     #detail {
         width: 90%;
         margin-top: 50px;
